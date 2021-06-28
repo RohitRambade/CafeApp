@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6eec0"
+    tools:context=".FoodDetailActivity">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_marginTop="10dp">
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="270dp"
+                android:id="@+id/food_image"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="8sp"
+                android:scaleType="centerInside"
+                tools:background="@drawable/a1"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/food_image"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/food_name_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textAllCaps="true"
+                    android:textColor="	#006400"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:text="CHICKEN SLIMMER SPICY" />
+
+                <TextView
+                    android:id="@+id/type"
+                    android:layout_width="203dp"
+                    android:layout_height="238dp"
+                    android:layout_marginTop="8dp"
+
+                    android:text="Origin of Food"
+                    android:textColor="@color/black"
+
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:text="Order Process"-->
+<!--                    android:textSize="12sp"-->
+<!--                    android:textStyle="bold"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:text=" - Select Food \n - Send a request-->
+<!--Max at 10 AM \n - Food delivered at 11.30 AM \n - Pay cash-->
+<!--\ n - No order cancellation"-->
+<!--                    android:textSize="10sp"/>-->
+            </LinearLayout>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="@android:color/holo_red_dark"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Rs. "
+                        android:textColor="@android:color/black"
+                        android:textSize="19sp"/>
+
+                    <TextView
+                        android:id="@+id/price_detail_text_view"
+                        android:layout_width="170dp"
+                        android:layout_height="53dp"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+
+                        android:textStyle="bold"
+                        tools:text="54800" />
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:textColor="@color/black"
+                    android:text="Number of Servings"
+                    android:textSize="15sp"/>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="left">
+                    <Button
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/increment_button"
+                        android:layout_toRightOf="@+id/sum_text_view"
+                        android:backgroundTint="@android:color/holo_orange_light"
+                        android:paddingTop="-5dp"
+                        android:text="+"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sum_text_view"
+                        android:layout_margin="4dp"
+                        android:layout_toRightOf="@+id/decrement_button"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textSize="22sp"/>
+                    <Button
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/decrement_button"
+                        android:paddingTop="-5dp"
+                        android:backgroundTint="@android:color/holo_orange_light"
+                        android:text="-"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="left"
+                        android:layout_margin="6dp"
+                        android:text="Quantity"
+                        android:textColor="@color/black"
+                        android:layout_toRightOf="@id/increment_button"
+                        android:textStyle="bold"
+                        android:textSize="18sp"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/holo_red_dark"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"
+                    android:text="TOTAL"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="19sp"
+                    android:textStyle="bold"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Rs. "
+                        android:textColor="@android:color/black"
+                        android:textSize="19sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/price_total_text_view"
+                        android:layout_marginRight="22dp"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="19sp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnAddtoCart"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/roundedshape"
+            android:text="Add To Cart"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnviewCart"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:background="@drawable/cart_roundshape"
+            android:text="View Cart"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+</ScrollView>
