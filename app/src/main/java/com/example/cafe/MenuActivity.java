@@ -53,9 +53,9 @@ public class MenuActivity extends AppCompatActivity {
         foods.add(new Food("Chicken Chilly Momos",R.drawable.m1, 90,"Asian Pasta Food"));
         foods.add(new Food("Periperi Fries",R.drawable.f1, 100,"Combine herbs, spices and global flavors with humble french fries to add profit to the plate."));
         foods.add(new Food("Cheese Masala Maggi",R.drawable.cheesemasalamaggi, 100,"Asian Pasta Food"));
-        foods.add(new Food("Cold Coffee",R.drawable.coldcoffee, 100,"Cold brew coffee is made by steeping coarsely ground beans in cold water for several hours, then filtering them"));
-        foods.add(new Food("Mojito",R.drawable.mojito, 100,"Basil lemon mojito recipe is a refreshing summer mocktail beverage with fresh basil and lemon"));
-        foods.add(new Food("Hot coffee",R.drawable.hotcoffee, 100,"Coffee is a hot drink made with water and ground or powdered coffee beans."));
+        foods.add(new Food("Cold Coffee",R.drawable.coldcoffee, 35,"Cold brew coffee is made by steeping coarsely ground beans in cold water for several hours, then filtering them"));
+        foods.add(new Food("Mojito",R.drawable.mojito, 35,"Basil lemon mojito recipe is a refreshing summer mocktail beverage with fresh basil and lemon"));
+        foods.add(new Food("Hot coffee",R.drawable.hotcoffee, 40,"Coffee is a hot drink made with water and ground or powdered coffee beans."));
 
 
 
