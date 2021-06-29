@@ -51,7 +51,12 @@ public class MenuActivity extends AppCompatActivity {
         foods.add(new Food("Egg Roll ",R.drawable.r1, 90," Egg roll in a bowl is a delicious way to eat the flavors of an egg roll without all the deep frying of a  traditional egg roll"));
         foods.add(new Food("French Fries",R.drawable.f, 100,"French fries, or simply fries (North American English), chips finger chips (Indian English), hot chips (Australian English) or French-fried potatoes, are batonnet"));
         foods.add(new Food("Chicken Chilly Momos",R.drawable.m1, 90,"Asian Pasta Food"));
-        foods.add(new Food("Periperi Fries",R.drawable.f1, 100,"Asian Pasta Food"));
+        foods.add(new Food("Periperi Fries",R.drawable.f1, 100,"Combine herbs, spices and global flavors with humble french fries to add profit to the plate."));
+        foods.add(new Food("Cheese Masala Maggi",R.drawable.cheesemasalamaggi, 100,"Asian Pasta Food"));
+        foods.add(new Food("Cold Coffee",R.drawable.coldcoffee, 100,"Cold brew coffee is made by steeping coarsely ground beans in cold water for several hours, then filtering them"));
+        foods.add(new Food("Mojito",R.drawable.mojito, 100,"Basil lemon mojito recipe is a refreshing summer mocktail beverage with fresh basil and lemon"));
+        foods.add(new Food("Hot coffee",R.drawable.hotcoffee, 100,"Coffee is a hot drink made with water and ground or powdered coffee beans."));
+
 
 
 
